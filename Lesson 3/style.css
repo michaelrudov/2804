@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+.day-view{
+    flex: 1535 0 0;
+}
+.month-view{
+    flex: 802 0 0;
+   
+   
+    background: rgba(42, 46, 65, 0.7);
+}
+.month{
+    display: flex;
+    justify-content: center;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+}

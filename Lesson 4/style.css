@@ -1,0 +1,170 @@
+.first{
+    display: flex;
+}
+.first .colored{
+    flex: 1 0 0;
+}
+
+.second{
+    display: flex;
+}
+.second .colored{
+    flex: 1 0 0;
+}
+.third{
+    display: flex;
+}
+.third .colored{
+    flex: 0 0 25%;
+}
+.fourth{
+    display: flex;
+}
+.fourth .colored{
+    flex: 0 0 25%
+}
+.fourth .colored:last-child{
+    flex-grow: 1;
+}
+.fifth{
+    display: flex;
+}
+.fifth .colored{
+    flex: 1 0 0;
+}
+
+
+
+@media (min-width: 320px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .first .colored {
+        flex-basis: 50%;
+    }
+    .second{
+        flex-wrap: wrap;
+    }
+    .second .colored {
+        flex-basis: 50%;
+    }
+    .third{
+        flex-wrap: wrap;
+    }
+    .third .colored {
+        flex-basis: 100%;
+    }
+    .fourth{
+        flex-wrap: wrap;
+    }
+    .fifth{
+        flex-wrap: wrap;
+    }
+    .fourth .colored {
+        flex-basis: 100%;
+    }
+    .fifth .colored {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        background-color: #00BCD4;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .first .colored{
+        flex-basis: 50%;
+    }
+    .second{
+        flex-wrap: wrap;
+    }
+    .second .colored{
+        flex-basis: 50%;
+    }
+    .third{
+        flex-wrap: wrap;
+    }
+    .third .colored{
+        flex-basis: 100%;
+    }
+    .fourth .colored{
+        flex-basis: 50%;
+    }
+    .fourth .colored:last-child{
+        flex-grow: 1;
+    }
+    .fifth .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+
+@media (min-width:960px){
+    body{
+        background-color: antiquewhite;
+    }
+    .third .colored{
+        flex-basis: 33%;
+    }
+    .fourth .colored{
+        flex-basis: 33%;
+    }
+    .fourth .colored:nth-child(2){
+        flex-basis: 30%;
+    }
+    .fifth .colored {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+
+
+@media (min-width:1200px){
+    .third .colored{
+        flex-basis: 50%;
+    }
+    .third .colored:last-child{
+        flex-grow: 1;
+    }
+    .fourth .colored{
+        flex-basis: 33%;
+    }
+    .fourth .colored:nth-child(2){
+        flex-basis: 30%;
+    }
+    .fifth {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fifth .colored {
+        flex-grow: 0;
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width:1800px){
+    .first .colored{
+        flex: 1 0 0;
+    }
+    .second .colored{
+        flex: 1 0 0;
+    }
+    .third .colored{
+        flex: 0 0 25%;
+    }
+    .fourth .colored{
+        flex: 0 0 25%
+    }
+    .fourth .colored:last-child{
+        flex-grow: 1;
+    }
+    .fifth .colored{
+        flex: 1 0 0;
+    }
+}
