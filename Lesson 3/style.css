@@ -9,15 +9,8 @@ body{
 }
 .month-view{
     flex: 802 0 0;
-   
-   
     background: rgba(42, 46, 65, 0.7);
-}
-.month{
-    display: flex;
-    justify-content: center;
-}
-.numbers{
-    display: flex;
-    flex-direction: column;
+
+    padding: 0 102px 0 99px;
+    box-sizing: border-box;
 }

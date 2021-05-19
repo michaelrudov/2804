@@ -10,31 +10,38 @@
 <body>
     <main class="day-view"></main>
     <aside class="month-view">
-        <div>
-            <h2 class="month">
-                March 2018
-            </h2>
-        </div>
-    <div class="numbers">
-        <div>
-            M T W T F Sat Sun     
-        </div>
-        <div>
-            1 2 3 4 5 6 7
-        </div>
-        <div>
-            6 7 8 9 10 11 12
-        </div>
-        <div>
-            13 14 15 16 17 18 19
-        </div>
-        <div>
-            20 21 23 24 25 26 27
-        </div>
-        <div>
-            28 29 30 31 1 2 3
-        </div>
-    </div>    
+        <ol class="calendar">
+            <div class="calendar__header">
+                <div class="calendar__title">
+                    March 2018
+                </div>
+                <button aria-label="Previous month" class="calendar__btn calendar__btn-prev">
+                    <svg 
+                    role="image"
+                    aria-label=""
+                    class="calendar__image" 
+                    viewBox="0 0 20 38">
+                    <path d="M19 1L1 19L19 37"/>
+                    </svg> 
+                </button>
+                <button aria-label="Next month" 
+                class="calendar__btn calendar__btn-next">
+                    <svg class="calendar__image calendar__image--rotated" 
+                    viewBox="0 0 20 38">
+                        <path d="M19 1L1 19L19 37"/>
+                    </svg> 
+                </button>
+            </div>
+            <ol class="calendar__day-names">
+                <li class="calendar__day-name">M</li>
+                <li class="calendar__day-name">T</li>
+                <li class="calendar__day-name">W</li>
+                <li class="calendar__day-name">T</li>
+                <li class="calendar__day-name">F</li>
+                <li class="calendar__day-name">Sat</li>
+                <li class="calendar__day-name">Sun</li>
+            </ol>
+        </ol>
     </aside>
    
 </body>
